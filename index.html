@@ -142,7 +142,8 @@
   .plan .pname{font-weight:800; font-size:20px; display:flex; align-items:center; gap:10px}
   .plan .pname img{height:26px; width:auto}
   .plan .who{font-size:13.5px; color:var(--muted); min-height:38px}
-  .plan .price{font-size:40px; font-weight:900; margin:8px 0 0}
+  .plan .trial{font-size:14px; font-weight:800; color:var(--green); margin-top:6px}
+  .plan .price{font-size:40px; font-weight:900; margin:2px 0 0}
   .plan .price small{font-size:15px; color:var(--muted); font-weight:600}
   .plan .permo{font-size:13px; color:var(--cyan); font-weight:700}
   .plan ul{list-style:none; margin:16px 0; display:flex; flex-direction:column; gap:11px}
@@ -170,7 +171,7 @@
   .q > button{width:100%; text-align:left; background:none; border:0; color:var(--text); font-weight:700; font-size:15.5px; padding:18px 20px; cursor:pointer; display:flex; justify-content:space-between; gap:14px; align-items:center}
   .q .a{max-height:0; overflow:hidden; transition:max-height .3s ease; color:var(--muted); font-size:14.5px}
   .q .a div{padding:0 20px 18px}
-  .q.open .a{max-height:340px}
+  .q.open .a{max-height:360px}
   .q .plus{color:var(--cyan); font-weight:900; font-size:20px; flex:0 0 auto}
 
   /* final */
@@ -205,7 +206,7 @@
 <!-- Annotation: honest framing of the concept -->
 <div class="anno" id="anno">
   <div class="wrap">
-    <span><b>Concept rebuild.</b> Applies the red-team findings to goproinsider.com. Images and member photos are pulled live from the real site. Trial terms, pricing display, and the money-back guarantee shown here are <b>proposed fixes</b>: confirm the brand's real policy before publishing.</span>
+    <span><b>Concept rebuild.</b> Applies the red-team findings to goproinsider.com. Images and member photos are pulled live from the real site. The <b>$1 trial</b> shown here uses illustrative terms ($1 for 7 days, then the plan price): confirm the brand's real $1-trial terms and guarantee before publishing.</span>
     <button onclick="document.getElementById('anno').style.display='none'">Hide</button>
   </div>
 </div>
@@ -215,7 +216,7 @@
     <img class="logo" src="https://goproinsider.com/wp-content/uploads/2024/12/GPI-Logo_Wht-web-1.png" alt="Go Pro Insider">
     <nav>
       <a class="login" href="https://app.goproinsider.com/login">Login</a>
-      <a class="btn" href="#pricing">Start Free Trial</a>
+      <a class="btn" href="#pricing">Start $1 Trial</a>
     </nav>
   </div>
 </header>
@@ -229,13 +230,13 @@
     <div>
       <div class="eyebrow">Daily training for network marketers · 6 languages</div>
       <h1>Know exactly what to do <span class="cyan">every day</span> to grow your business.</h1>
-      <p class="sub">A new 7-minute training from Eric Worre every morning, focused on what is working in network marketing right now. Watch a real one below before you decide.</p>
+      <p class="sub">A new 7-minute training from Eric Worre every morning, focused on what is working in network marketing right now. Watch a real one below, then try it all for $1.</p>
       <div class="cta-row">
-        <a class="btn big" href="#pricing">Start My Free 7-Day Trial</a>
+        <a class="btn big" href="#pricing">Start My $1 Trial</a>
         <a class="btn ghost" href="#sample">▶ Watch a real training</a>
       </div>
       <div class="cta-terms">
-        <span><span class="tick">✓</span> $0 today</span>
+        <span><span class="tick">✓</span> Just $1 today</span>
         <span><span class="tick">✓</span> Cancel in one click, anytime</span>
         <span><span class="tick">✓</span> 30-day money-back guarantee</span>
       </div>
@@ -247,9 +248,9 @@
         <div class="play">
           <div class="playbtn"><svg viewBox="0 0 24 24" fill="#0a0d13"><path d="M8 5v14l11-7z"/></svg></div>
         </div>
-        <div class="label">Watch today's real 7-minute training, no card needed</div>
+        <div class="label">Watch a real 7-minute training free, then start for $1</div>
       </div>
-      <p class="note">Demo slot: wire this to one real, ungated daily training so buyers experience the product before paying.</p>
+      <p class="note">Demo slot: wire this to one real, ungated daily training so buyers experience the product before they pay.</p>
     </div>
   </div>
 </section>
@@ -335,7 +336,7 @@
   <div class="wrap">
     <div class="center">
       <div class="eyebrow">What is included</div>
-      <h2 style="margin:10px 0 8px">Everything in your membership</h2>
+      <h2 style="margin:10px 0 8px">Everything your $1 unlocks</h2>
       <p class="sub center" style="margin:0 auto 34px">Counted in real deliverables, not invented dollar values.</p>
     </div>
     <div class="deliv">
@@ -448,8 +449,8 @@
 <section id="pricing">
   <div class="wrap center">
     <div class="eyebrow">Membership</div>
-    <h2 style="margin:10px 0 6px">Start free. See it work. Then decide.</h2>
-    <p class="sub center" style="margin:0 auto">Try everything free for 7 days. Clear terms, one-click cancel, and a 30-day money-back guarantee on every plan.</p>
+    <h2 style="margin:10px 0 6px">Try it for $1. See it work. Then decide.</h2>
+    <p class="sub center" style="margin:0 auto">Get 7 days of full access for $1. Clear terms, one-click cancel, and a 30-day money-back guarantee on every plan.</p>
     <div class="toggle">
       <button id="tYear" class="on" onclick="setCycle('year')">Yearly<span class="save">save ~17%</span></button>
       <button id="tMonth" onclick="setCycle('month')">Monthly</button>
@@ -460,7 +461,8 @@
       <div class="card plan">
         <div class="pname"><img src="https://goproinsider.com/wp-content/uploads/2024/12/GPI-Logo_Wht-web-1.png" alt="Go Pro Insider"></div>
         <div class="who">For anyone starting out or feeling stuck who wants to build a solid foundation.</div>
-        <div class="price" data-year="$199.90<small>/yr</small>" data-month="$19.99<small>/mo</small>">$199.90<small>/yr</small></div>
+        <div class="trial">$1 for your first 7 days</div>
+        <div class="price" data-year="then $199.90<small>/yr</small>" data-month="then $19.99<small>/mo</small>">then $199.90<small>/yr</small></div>
         <div class="permo" data-year="That is $16.66/month, billed yearly" data-month="Billed monthly, cancel anytime">That is $16.66/month, billed yearly</div>
         <ul>
           <li><span class="c">✓</span> Daily training from Eric, 6 languages</li>
@@ -469,8 +471,8 @@
           <li><span class="c">✓</span> Permanent access to your course library</li>
           <li><span class="c">✓</span> Virtual ticket to Go Pro Experience 2026</li>
         </ul>
-        <a class="btn" href="https://app.goproinsider.com/checkout/go-pro-insider-annual-1">Start My Free 7-Day Trial</a>
-        <div class="terms"><b>What happens:</b> $0 today. A card is required to start. On day 8 you are billed <b>$199.90/year</b> unless you cancel first. Cancel in one click anytime before then and pay nothing. 30-day money-back guarantee after that. Billed by Network Marketing Pro / Go Pro Insider.</div>
+        <a class="btn" href="https://app.goproinsider.com/checkout/go-pro-insider-annual-1">Start My $1 Trial</a>
+        <div class="terms"><b>What happens:</b> You pay <b>$1 today</b> for 7 days of full access. On day 8 you are billed <b>$199.90/year</b> unless you cancel first. Cancel in one click anytime before then. 30-day money-back guarantee after that. Billed by Network Marketing Pro / Go Pro Insider.</div>
       </div>
 
       <!-- Plan 2 -->
@@ -478,7 +480,8 @@
         <div class="badge">Most popular</div>
         <div class="pname"><img src="https://goproinsider.com/wp-content/uploads/2024/12/GPI-Logo_Prime_Wht.png" alt="Go Pro Insider Prime"></div>
         <div class="who">For those ready to grow fast and lead a winning team with the full library.</div>
-        <div class="price" data-year="$499.90<small>/yr</small>" data-month="$49.99<small>/mo</small>">$499.90<small>/yr</small></div>
+        <div class="trial">$1 for your first 7 days</div>
+        <div class="price" data-year="then $499.90<small>/yr</small>" data-month="then $49.99<small>/mo</small>">then $499.90<small>/yr</small></div>
         <div class="permo" data-year="That is $41.66/month, billed yearly" data-month="Billed monthly, cancel anytime">That is $41.66/month, billed yearly</div>
         <ul>
           <li><span class="c">✓</span> Everything in Go Pro Insider</li>
@@ -486,16 +489,16 @@
           <li><span class="c">✓</span> Priority access to new trainings and challenges</li>
           <li><span class="c">✓</span> VIP virtual ticket to Go Pro Experience 2026</li>
         </ul>
-        <a class="btn" href="https://app.goproinsider.com/checkout/go-pro-insider-prime-annual-1">Start My Free 7-Day Trial</a>
-        <div class="terms"><b>What happens:</b> $0 today. A card is required to start. On day 8 you are billed <b>$499.90/year</b> unless you cancel first. Cancel in one click anytime before then and pay nothing. 30-day money-back guarantee after that. Billed by Network Marketing Pro / Go Pro Insider.</div>
+        <a class="btn" href="https://app.goproinsider.com/checkout/go-pro-insider-prime-annual-1">Start My $1 Trial</a>
+        <div class="terms"><b>What happens:</b> You pay <b>$1 today</b> for 7 days of full access. On day 8 you are billed <b>$499.90/year</b> unless you cancel first. Cancel in one click anytime before then. 30-day money-back guarantee after that. Billed by Network Marketing Pro / Go Pro Insider.</div>
       </div>
     </div>
 
-    <p class="muted" style="font-size:13px; margin-top:20px">Not sure yet? Watch the <a href="#sample" class="cyan" style="font-weight:700">free sample training</a> first. Take the full 7 days on us before you decide.</p>
+    <p class="muted" style="font-size:13px; margin-top:20px">Not sure yet? Watch the <a href="#sample" class="cyan" style="font-weight:700">free sample training</a> first, then get all 7 days for $1.</p>
 
     <!-- ROI reframe (P1-3) -->
     <div class="card" style="padding:20px 26px; margin-top:26px; display:flex; gap:16px; align-items:center; justify-content:center; flex-wrap:wrap">
-      <div style="font-weight:800; font-size:16px">$16.66 a month is about <span class="yellow">55 cents a day.</span></div>
+      <div style="font-weight:800; font-size:16px">After the trial, $16.66 a month is about <span class="yellow">55 cents a day.</span></div>
       <div class="muted" style="font-size:14px">One new recruit usually covers a full year. This is the smallest bet you can make on your own skills.</div>
     </div>
   </div>
@@ -507,8 +510,8 @@
     <div class="guarantee">
       <div class="seal"><b>30</b><span>DAY GUARANTEE</span></div>
       <div>
-        <h3 style="font-size:22px; margin-bottom:8px">Try it with zero risk.</h3>
-        <p class="muted" style="font-size:15px">Start free for 7 days. If you keep it and it is not for you, cancel in one click from your account, no phone call and no email required. And if you are billed and change your mind, you have 30 days to get a full refund, no questions asked. Your statement reads Network Marketing Pro / Go Pro Insider.</p>
+        <h3 style="font-size:22px; margin-bottom:8px">Try it for a dollar, with zero risk.</h3>
+        <p class="muted" style="font-size:15px">Start for just $1 and get 7 full days. If it is not for you, cancel in one click from your account, no phone call and no email required. And if you are billed for the subscription and change your mind, you have 30 days to get a full refund, no questions asked. Your statement reads Network Marketing Pro / Go Pro Insider.</p>
         <p class="note">Fix applied: the old page had no refund policy anywhere and buried cancellation inside a billing-dispute FAQ.</p>
       </div>
     </div>
@@ -525,7 +528,7 @@
         <p class="muted" style="font-size:14.5px">A recurring charge is a household decision. Copy this summary and send it, so the conversation is about the facts, not a guess.</p>
         <button class="btn copybtn" onclick="copyShare()">Copy the summary<span class="copied" id="copied">Copied</span></button>
       </div>
-      <div class="box" id="shareText"><b>Go Pro Insider (Eric Worre)</b><br>· What: one 7-minute training a day, plus 15 courses<br>· Cost: $16.66/month billed yearly ($199.90), free for 7 days<br>· Risk: cancel in one click anytime, 30-day money-back guarantee</div>
+      <div class="box" id="shareText"><b>Go Pro Insider (Eric Worre)</b><br>· What: one 7-minute training a day, plus 15 courses<br>· Trial: $1 for 7 days, then $16.66/month billed yearly ($199.90)<br>· Risk: cancel in one click anytime, 30-day money-back guarantee</div>
     </div>
   </div>
 </section>
@@ -535,7 +538,7 @@
   <div class="wrap">
     <div class="center"><div class="eyebrow">Questions</div><h2 style="margin:10px 0 30px">The things people actually ask</h2></div>
     <div class="faq">
-      <div class="q"><button onclick="tg(this)">Does the free trial require a credit card? What am I charged, and when? <span class="plus">+</span></button><div class="a"><div>A card is required to start, but you are charged $0 today. Your 7 days are completely free. On day 8 you are billed for the plan you chose ($199.90/year or $499.90/year) unless you cancel first. Cancel anytime before day 8 and you pay nothing.</div></div></div>
+      <div class="q"><button onclick="tg(this)">How does the $1 trial work? What am I charged, and when? <span class="plus">+</span></button><div class="a"><div>You pay $1 today and get 7 days of full access. A card is required. On day 8 you are billed for the plan you chose ($199.90/year or $499.90/year) unless you cancel first. Cancel anytime before day 8 and you are not charged the subscription.</div></div></div>
       <div class="q"><button onclick="tg(this)">How do I cancel? <span class="plus">+</span></button><div class="a"><div>Log in at app.goproinsider.com, open Billing, and click Cancel. It takes about 10 seconds, with no phone call and no email required. Cancellation stops all future billing immediately.</div></div></div>
       <div class="q"><button onclick="tg(this)">What is your refund policy? <span class="plus">+</span></button><div class="a"><div>Every plan carries a 30-day money-back guarantee. If you are billed and decide it is not for you within 30 days, email support for a full refund, no questions asked.</div></div></div>
       <div class="q"><button onclick="tg(this)">How is this different from Eric's free YouTube and podcast? <span class="plus">+</span></button><div class="a"><div>The free content is Eric's best evergreen teaching, and it is great. Go Pro Insider is dated, what-is-working-now training delivered one sequenced step a day, plus 15 structured courses and the Path to 10 Recruits system that you keep in your library. Free teaches; Inside makes you act daily.</div></div></div>
@@ -549,11 +552,11 @@
 <!-- FINAL CTA (P2-1 no fake urgency) -->
 <section class="final">
   <div class="wrap">
-    <h2 style="margin-bottom:14px">Take the full 7 days on us.</h2>
+    <h2 style="margin-bottom:14px">Get 7 full days for a dollar.</h2>
     <p class="sub center" style="margin:0 auto 26px">Watch a real training. Test it in your own conversations. Keep it only if it earns a place in your day.</p>
-    <a class="btn big" href="#pricing">Start My Free 7-Day Trial</a>
+    <a class="btn big" href="#pricing">Start My $1 Trial</a>
     <div class="cta-terms" style="justify-content:center; margin-top:16px">
-      <span><span class="tick">✓</span> $0 today</span>
+      <span><span class="tick">✓</span> Just $1 today</span>
       <span><span class="tick">✓</span> Cancel in one click</span>
       <span><span class="tick">✓</span> 30-day money-back guarantee</span>
     </div>
@@ -568,13 +571,13 @@
         <a href="https://www.networkmarketingpro.com/terms-and-conditions/">Terms</a>
         <a href="https://www.networkmarketingpro.com/privacy-policy/">Privacy</a>
         <a href="mailto:support@goproinsider.com">Support</a>
-        <a href="#pricing">Start Free Trial</a>
+        <a href="#pricing">Start $1 Trial</a>
       </div>
     </div>
     <div class="disc">
       <b>Income disclaimer.</b> Results are not typical or guaranteed. Go Pro Insider is educational training, not a business or income opportunity. Most people who participate in network marketing earn little or no income. Individual results depend on your effort, skill and factors outside our control. Member testimonials reflect individual experiences and are not a promise of your results. Billing appears on your statement as Network Marketing Pro / Go Pro Insider. The only official places to join or log in are goproinsider.com and app.goproinsider.com.
       <br><br>
-      <b>Concept note.</b> This page is a red-team rebuild for evaluation. Copy, pricing display, trial terms and the guarantee are proposed and must be confirmed against the brand's real policy and legal review before any public use.
+      <b>Concept note.</b> This page is a red-team rebuild for evaluation. Copy, pricing display, the $1 trial terms and the guarantee are proposed and must be confirmed against the brand's real policy and legal review before any public use.
     </div>
   </div>
 </footer>
@@ -587,7 +590,6 @@
     document.querySelectorAll('.price,.permo').forEach(function(el){
       el.innerHTML = el.getAttribute('data-'+c);
     });
-    // share summary follows the yearly framing
   }
   function copyShare(){
     var t = document.getElementById('shareText').innerText;
