@@ -471,7 +471,7 @@
           <li><span class="c">✓</span> Permanent access to your course library</li>
           <li><span class="c">✓</span> Virtual ticket to Go Pro Experience 2026</li>
         </ul>
-        <a class="btn" href="https://app.goproinsider.com/checkout/go-pro-insider-annual-1">Start My $1 Trial</a>
+        <a class="btn planbtn" data-year="https://app.goproinsider.com/checkout/go-pro-insider-annual-1" data-month="https://app.goproinsider.com/checkout/go-pro-insider-monthly-1" href="https://app.goproinsider.com/checkout/go-pro-insider-annual-1">Start My $1 Trial</a>
         <div class="terms"><b>What happens:</b> You pay <b>$1 today</b> for 7 days of full access. On day 8 you are billed <b>$199.90/year</b> unless you cancel first. Cancel in one click anytime before then. 30-day money-back guarantee after that. Billed by Network Marketing Pro / Go Pro Insider.</div>
       </div>
 
@@ -489,7 +489,7 @@
           <li><span class="c">✓</span> Priority access to new trainings and challenges</li>
           <li><span class="c">✓</span> VIP virtual ticket to Go Pro Experience 2026</li>
         </ul>
-        <a class="btn" href="https://app.goproinsider.com/checkout/go-pro-insider-prime-annual-1">Start My $1 Trial</a>
+        <a class="btn planbtn" data-year="https://app.goproinsider.com/checkout/go-pro-insider-prime-annual-1" data-month="https://app.goproinsider.com/checkout/go-pro-insider-prime-monthly-1" href="https://app.goproinsider.com/checkout/go-pro-insider-prime-annual-1">Start My $1 Trial</a>
         <div class="terms"><b>What happens:</b> You pay <b>$1 today</b> for 7 days of full access. On day 8 you are billed <b>$499.90/year</b> unless you cancel first. Cancel in one click anytime before then. 30-day money-back guarantee after that. Billed by Network Marketing Pro / Go Pro Insider.</div>
       </div>
     </div>
@@ -589,6 +589,9 @@
     document.getElementById('tMonth').classList.toggle('on', c==='month');
     document.querySelectorAll('.price,.permo').forEach(function(el){
       el.innerHTML = el.getAttribute('data-'+c);
+    });
+    document.querySelectorAll('.planbtn').forEach(function(el){
+      el.href = el.getAttribute('data-'+c);
     });
   }
   function copyShare(){
